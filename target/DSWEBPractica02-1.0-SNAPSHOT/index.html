@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crud Empleados</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark" style="background-color: tomato">
+            <ul class="navbar-nav">
+                <li><a href="<%=request.getContextPath()%>/EmpleadoController?action=list" class="nav-link">Empleados</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+
+    <div class="container col-md-5">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="text-center">CRUD Empleados</h2>
+                <hr>
+
+                <div class="text-center">
+                    <a href="EmpleadoController?action=listar" class="btn btn-primary">Listar Empleados</a>
+                    <br/><br/>
+
+                    <a href="EmpleadoController?action=nuevo" class="btn btn-success">Agregar Empleado</a>
+                    <br/><br/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
